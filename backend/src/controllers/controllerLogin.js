@@ -9,7 +9,6 @@ const controllerLogin = {
       if (user === undefined) return next('USER_NOT_EXIST');
       return res.status(httpstatuscode.OK).json(user);
     } catch (error) {
-      console.log(error);
       next(error);
     }
   },
