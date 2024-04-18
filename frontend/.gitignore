@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+.env// Tamanho de fonte personalizado
 
 # testing
 /coverage
