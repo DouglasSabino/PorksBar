@@ -12,7 +12,7 @@ function Login() {
 
   const handleChange = ({target}) => {
     if (target.name === "username") setUsername(target.value);
-    else setPassword(target.value)
+    else setPassword(target.value);
   }
 
   const clickLogin = () => {
@@ -20,7 +20,6 @@ function Login() {
       username,
       password
     }).then((resp) => {
-      console.log(resp);
       localStorage.setItem('token', resp.data);
       history('/home');
     }).catch((err) => toast.error(err.response.data));
