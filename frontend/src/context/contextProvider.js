@@ -1,13 +1,19 @@
-import React from "react";
+import React, {useState} from "react";
 import PropTypes from 'prop-types';
 import appContext from './appContext';
 
 function ContextProvider({ children }) {
   // LANCHES 
-
+  
   // USUARIOS
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
 
   const contextValue = {
+    username, 
+    setUsername,
+    password, 
+    setPassword
   };
   
   return (
